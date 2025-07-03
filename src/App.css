@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Michroma&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: #071f40;
+  --color-principal: #f2f2f2;
+  --color-secundario: #038587;
+  --color-terciario: #015a95;
+  --color-cuaternario: #04325b;
+  --color-fuente-principal: #ffffff;
+  --color-fuente-secundario: #000;
+  --color-fuente-terciario: #bbb;
+  --color-btn-principal: #071f40;
+  --color-btn-secundario: #038587;
+  --fuente-titulo: "Michroma", sans-serif;
+  --fuente-subtitulo: "Alumni Sans Pinstripe", sans-serif;
+  --fuente-texto: "Roboto", sans-serif;
+  --fuente-tamanio-titulo: 2rem;
+  --fuente-tamanio-titulo-tablet: 2.5rem;
+  --fuente-tamanio-titulo-desktop: 3rem;
+  --fuente-tamanio-subtitulo: 1.5rem;
+  --fuente-tamanio-subtitulo-tablet: 2rem;
+  --fuente-tamanio-subtitulo-desktop: 2.5rem;
+  --fuente-tamanio-texto: 1rem;
+  --fuente-tamanio-texto-tablet: 1.15rem;
+  --fuente-tamanio-texto-desktop: 1.25rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--fuente-texto);
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.titulo {
+  font-family: var(--fuente-titulo);
+  font-size: var(--fuente-tamanio-titulo);
+  color: var(--color-principal);
+}
+
+.sidebar {
+  background-color: var(--color-background);
+  color: var(--color-fuente-principal);
+  height: 100vh;
+}
+
+.bg-azulOscuro {
+  background-color: var(--color-background);
+}
+
+
+.sidebar-full-height {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.navBarMenu {
+  background-color: var(--color-background) !important;
+}
