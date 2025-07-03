@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Michroma&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Michroma&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
 
 * {
   padding: 0;
@@ -20,6 +23,7 @@
   --fuente-titulo: "Michroma", sans-serif;
   --fuente-subtitulo: "Alumni Sans Pinstripe", sans-serif;
   --fuente-texto: "Roboto", sans-serif;
+  --fuente-interactiva: "Space Grotesk", sans-serif;
   --fuente-tamanio-titulo: 2rem;
   --fuente-tamanio-titulo-tablet: 2.5rem;
   --fuente-tamanio-titulo-desktop: 3rem;

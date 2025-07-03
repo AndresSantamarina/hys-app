@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import NavMenu from "./NavMenu";
 import SideMenu from "./SideMenu";
@@ -5,12 +6,13 @@ import { motion } from "framer-motion";
 import "./Layout.css";
 
 const Layout = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="layout-container">
-      <NavMenu />
+      <NavMenu setMenuOpen={setMenuOpen} />
       <div className="main-content">
-        <SideMenu />
-        {/* Animación de transición para el contenido */}
+        <SideMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <motion.div
           className="page-content"
           initial={{ opacity: 0, y: 10 }}

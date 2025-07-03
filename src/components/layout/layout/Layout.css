@@ -4,6 +4,14 @@
   height: 100vh;
 }
 
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  color: var(--color-principal);
+  margin-right: auto;
+  padding-left: 0.5rem;
+}
+
 .nav-bar {
   display: flex;
   justify-content: flex-end;
@@ -20,9 +28,24 @@
 }
 
 .nav-item {
+  background: transparent;
+  border: none;
   color: var(--color-fuente-principal);
-  font-family: var(--fuente-texto);
+  font-family: var(--fuente-interactiva);
+  font-size: 1rem;
   cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: var(--color-secundario);
+}
+
+.right-nav-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
 }
 
 .profile-picture {
@@ -41,17 +64,6 @@
   flex: 1;
 }
 
-.side-menu {
-  width: 220px;
-  background-color: var(--color-cuaternario);
-  color: var(--color-fuente-principal);
-  padding: 1rem;
-}
-
-.side-menu ul {
-  list-style: none;
-}
-
 .page-content {
   flex: 1;
   padding: 1rem;
@@ -59,25 +71,77 @@
   background-color: var(--color-background);
 }
 
-/* Responsive */
+/* SIDE MENU */
+.side-menu {
+  width: 220px;
+  background-color: var(--color-cuaternario);
+  color: var(--color-fuente-principal);
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  font-family: var(--fuente-interactiva);
+}
+
+.side-menu li:hover {
+  transform: translateX(5px);
+  color: var(--color-secundario);
+}
+
+/* BOTÓN HAMBURGUESA */
+.mobile-toggle {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .nav-bar {
-    display: none; /* ocultamos nav superior en mobile */
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1100;
+    font-size: 1.8rem;
+    color: var(--color-principal);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 220px;
+    padding-top: 3rem;
+    transform: translateX(-100%);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .side-menu.open {
+    transform: translateX(0);
+  }
+
+  .side-menu ul {
+    display: block;
   }
 
   .main-content {
     flex-direction: column;
-  }
-
-  .side-menu {
-    width: 100%;
-  }
-
-  .side-menu ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
   }
 
   .page-content {
