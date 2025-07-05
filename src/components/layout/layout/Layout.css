@@ -6,10 +6,17 @@
 
 .logo {
   font-family: "Dancing Script", cursive;
+  background-color: var(--color-cuaternario);
+  border: none;
+  cursor: pointer;
   font-size: 1.5rem;
   color: var(--color-principal);
   margin-right: auto;
   padding-left: 0.5rem;
+}
+
+.logo:hover {
+  color: var(--color-secundario);
 }
 
 .nav-bar {

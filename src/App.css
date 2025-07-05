@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Michroma&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   padding: 0;
@@ -59,7 +62,6 @@ body {
 .bg-azulOscuro {
   background-color: var(--color-background);
 }
-
 
 .sidebar-full-height {
   flex: 1;

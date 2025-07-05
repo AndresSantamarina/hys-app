@@ -1,0 +1,26 @@
+.home-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--color-fuente-principal);
+  font-family: var(--fuente-texto);
+}
+
+.home-title {
+  font-size: var(--fuente-tamanio-titulo-desktop);
+  font-family: "Dancing Script", cursive;
+  color: var(--color-principal);
+  margin-bottom: 1rem;
+}
+
+.home-welcome {
+  font-size: 1.25rem;
+  font-family: var(--fuente-interactiva);
+  color: var(--color-fuente-terciario);
+  margin-bottom: 1rem;
+}
+
+.home-version {
+  font-size: 0.95rem;
+  color: var(--color-fuente-terciario);
+  font-family: var(--fuente-texto);
+}

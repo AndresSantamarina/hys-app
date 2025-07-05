@@ -1,0 +1,32 @@
+.error-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--color-fuente-principal);
+  font-family: var(--fuente-texto);
+}
+
+.error-title {
+  font-size: 6rem;
+  color: var(--color-secundario);
+  font-family: var(--fuente-titulo);
+}
+
+.error-message {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.error-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-btn-secundario);
+  color: white;
+  text-decoration: none;
+  font-family: var(--fuente-interactiva);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.error-button:hover {
+  background-color: var(--color-terciario);
+}
