@@ -47,9 +47,9 @@ const Login = () => {
         <div className="form-footer">
           <p style={{ marginTop: "1rem", fontSize: "0.9rem" }}>
             ¿Olvidaste tu contraseña?{" "}
-            <a href="#" className="text-secundario">
+            <Link to="/recover" className="text-secundario">
               Recuperar
-            </a>
+            </Link>
           </p>
           <p style={{ marginTop: "0.5rem", fontSize: "0.9rem" }}>
             ¿No tienes cuenta?{" "}

@@ -11,7 +11,6 @@ const menuItems = [
   { label: "Operarios", path: "/workers" },
   { label: "Sectores", path: "/sectors" },
   { label: "Información", path: "/info" },
-  { label: "Opción", path: "/opcion" },
 ];
 
 const SideMenu = ({ menuOpen, setMenuOpen }) => {
